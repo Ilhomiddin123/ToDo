@@ -2,7 +2,7 @@ package todoList
 
 type User struct {
 	Id       int    `json:"-"`
-	Name     string `json:"name"`
-	Username string `json:"user_name"`
-	Password string `json:"password"`
+	Name     string `json:"name" binding:"required"`
+	Username string `json:"user_name" binding:"required"`
+	Password string `json:"password" binding:"required"`
 }
